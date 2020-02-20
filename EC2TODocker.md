@@ -23,5 +23,21 @@ docker run --name mynginx1 -p 80:80 -d nginx
 
 ```
 
+composeから入るBash
 
+```
+docker-compose exec web bash
+```
+
+sshでGitコマンド
+
+ssh-keygen -t rsa
+
+１回目の質問で名前指定 gitkey
+
+cat ~/.ssh/id_rsa.pub
+↓
+Githubに貼り付け
+
+ssh -T git@github.com
 
